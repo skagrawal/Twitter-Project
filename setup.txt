@@ -1,0 +1,22 @@
+Setup steps on Mac OS X Yosemite
+
+
+1. install: neo4j-community-2.0.4-unix.tar 
+   http://neo4j.com/download/other-releases/
+
+2. install pip
+   install py2neo: py2neo-release-1.6.3
+   https://github.com/nigelsmall/py2neo/releases
+
+3. install tweepy
+   https://github.com/tweepy/tweepy
+
+4. start Neo4j server
+   pk:neo4j-community-2.0.4 pk$  bin/neo4j start
+
+5. from the terminal run command
+   $ python traversal.py
+
+6. Save the run_file.cypher file in bin directory and to run the read cypher 
+   queries run command from the terminal
+   neo4j-sh (?)$ pk:bin pk$ ./neo4j-shell -c < run_file.cypher
